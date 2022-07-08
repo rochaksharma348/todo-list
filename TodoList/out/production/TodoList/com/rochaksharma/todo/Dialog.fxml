@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.rochaksharma.todo.DialogController">
+    <content>
+        <GridPane hgap="10" vgap="10">
+            <Label text="Short description:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="shortDescriptionField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+            <Label text="Details:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextArea wrapText="true" fx:id="detailsArea" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+            <Label text="Dead line:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <DatePicker fx:id="deadLinePicker" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+        </GridPane>
+    </content>
+</DialogPane>
